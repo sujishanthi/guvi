@@ -1,17 +1,17 @@
 #include<stdio.h>
 void main()
 {
-int i,n,sum=0,temp;
+int i,number,sum=0,temp;
 printf("enter the number");
-scanf("%d",&n);
-temp=n;
-while(n>=0)
+scanf("%d",&number);
+temp=number;
+while(number>=0)
 {
-i=n%10;
+i=number%10;
 sum=(sum*10)+i;
-n=n/10;
+number=number/10;
 }
-if(n=temp)
+if(number=temp)
 printf("palindrome no");
 else
 printf("not a palindrome no");
